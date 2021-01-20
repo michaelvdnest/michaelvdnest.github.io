@@ -4,11 +4,19 @@ permalink: /
 author_profile: true
 sidebar:
   nav: "home"
+feature_row:
+  - image_path: /assets/images/pandas-logo.png
+    alt: "pandas"
+    title: "pandas Recipes"
+    excerpt: "A collection of useful pandas recipes."
+    url: "/pandas-notes/useful-recipes/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
 ---
 
-The personal website for Michael van der Nest.
+A more general tech blog covering topics of interest that catches my eye.
 
-Watch this space. More coming soon.
+## Featured Content
 
 
-
+{% include feature_row %}

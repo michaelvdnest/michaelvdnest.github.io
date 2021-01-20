@@ -11,12 +11,12 @@ main:
     url: /category-archive/
   - title: "Tags"
     url: /tag-archive/
-  - title: "Pages"
-    url: /page-archive/
-  - title: "Collections"
-    url: /collection-archive/
-  - title: "External Link"
-    url: https://google.com
+#  - title: "Pages"
+#    url: /page-archive/
+#  - title: "Collections"
+#    url: /collection-archive/
+#  - title: "External Link"
+#    url: https://google.com
   - title: "Sitemap"
     url: /sitemap/
 
