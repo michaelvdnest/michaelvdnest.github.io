@@ -1,0 +1,52 @@
+# main links
+main:
+#  - title: "Quick-Start Guide"
+#    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "About"
+    description: A description for the page.
+    url: /about/
+  - title: "Posts"
+    url: /post-archive/
+  - title: "Categories"
+    url: /category-archive/
+  - title: "Tags"
+    url: /tag-archive/
+  - title: "Pages"
+    url: /page-archive/
+  - title: "Collections"
+    url: /collection-archive/
+  - title: "External Link"
+    url: https://google.com
+  - title: "Sitemap"
+    url: /sitemap/
+
+# pandas notes links
+pandas-notes:
+  - title: Pandas Overview
+    children:
+      - title: "Useful pandas Recipes"
+        url: /pandas-notes/useful-recipes/
+      - title: "Creating DataFrames"
+        url: /pandas-notes/creating-dataframes/
+      - title: "DataFrame Components"
+        url: /pandas-notes/dataframe-components/
+  - title: Select Data
+    children:
+      - title: "Choose Columns"
+        url: /pandas-notes/choose-columns/
+      - title: "Choose Rows"
+        url: /pandas-notes/choose-rows/
+      - title: "Missing Data"
+        url: /pandas-notes/missing-data/
+  - title: Sorting
+    children:
+      - title: Sorting
+        url: /pandas-notes/sorting/
+
+# home sidebar
+home:
+  - title: "Collections"
+    url: /collection-archive/
+    children:
+    - title: Pandas Recipes
+      url: /pandas-notes/useful-recipes/
