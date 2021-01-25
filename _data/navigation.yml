@@ -46,6 +46,8 @@ pandas-notes:
     children:
       - title: Concantenation
         url: /pandas-notes/concat/
+      - title: Merge
+        url: /pandas-notes/merge/
 
 # home sidebar
 home:

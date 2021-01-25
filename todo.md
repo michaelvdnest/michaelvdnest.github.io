@@ -10,9 +10,9 @@
 
 - [ ] combine
   - [x] concat
-  - [ ] join
-  - [ ] merge
-  - [ ] append
+  - [x] join
+  - [x] merge
+  - [x] append
 
 - [ ] transform-table-data
   - [ ] groupby
