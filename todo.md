@@ -9,6 +9,8 @@
 - [x] pandas-sort
 
 - [ ] combine
+  - [x] concat
+  - [ ] join
   - [ ] merge
   - [ ] append
 

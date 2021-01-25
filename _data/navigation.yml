@@ -42,6 +42,10 @@ pandas-notes:
     children:
       - title: Sorting
         url: /pandas-notes/sorting/
+  - title: Combining Data
+    children:
+      - title: Concantenation
+        url: /pandas-notes/concat/
 
 # home sidebar
 home:
