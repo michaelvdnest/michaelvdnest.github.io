@@ -48,6 +48,10 @@ pandas-notes:
         url: /pandas-notes/concat/
       - title: Merge
         url: /pandas-notes/merge/
+  - title: Summarize Data
+    children:
+      - title: Summarize Data
+        url: /pandas-notes/summarize/
 
 # home sidebar
 home:
