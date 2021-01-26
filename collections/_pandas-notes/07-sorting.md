@@ -5,6 +5,9 @@ excerpt: "Sorting pandas DataFrames by value and index."
 last_modified_at: 2021-01-20
 toc: true
 ---
+
+Sorting pandas DataFrames by value and index.
+
 ## Sort by values
 
 Sort a DataFrame by the values.

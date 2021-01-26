@@ -5,7 +5,6 @@ excerpt: "Dealing with missing data"
 last_modified_at: 2021-01-19
 toc: true
 ---
-
 pandas uses the value `nan` to represent missing data.
 
 <iframe src="/assets/notebooks/missing-data.html" frameBorder="0" width="100%" height="100%"

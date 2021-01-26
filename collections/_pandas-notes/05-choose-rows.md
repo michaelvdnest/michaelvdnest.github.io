@@ -8,6 +8,8 @@ header:
   teaser: /assets/images/choose-rows.png
 ---
 
+Select rows in the dataset.
+
 ![dataframe]({{ site.url }}{{ site.baseurl }}/assets/images/choose-rows.png)
 
 ## Top and Bottom Rows

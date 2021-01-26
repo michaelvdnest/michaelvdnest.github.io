@@ -8,6 +8,8 @@ header:
   teaser: /assets/images/choose-cols.png
 ---
 
+Select a subset of the dataset.
+
 ![dataframe]({{ site.url }}{{ site.baseurl }}/assets/images/choose-cols.png)
 
 ## Indexing operator

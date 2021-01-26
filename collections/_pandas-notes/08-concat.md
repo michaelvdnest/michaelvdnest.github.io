@@ -6,6 +6,8 @@ last_modified_at: 2021-01-21
 toc: true
 ---
 
+Append rows and columns of DataFrames.
+
 ## Rows
 
 Combine DataFrames vertically.
