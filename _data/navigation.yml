@@ -52,6 +52,10 @@ pandas-notes:
     children:
       - title: Summarize Data
         url: /pandas-notes/summarize/
+  - title: Transform
+    children:
+      - title: Group By
+        url: /pandas-notes/groupby/
 
 # home sidebar
 home:
