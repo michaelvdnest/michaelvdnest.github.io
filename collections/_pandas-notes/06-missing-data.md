@@ -3,7 +3,7 @@ title: "Missing Data"
 permalink: /pandas-notes/missing-data/
 excerpt: "Dealing with missing data"
 last_modified_at: 2021-01-19
-toc: true
+toc: false
 ---
 pandas uses the value `nan` to represent missing data.
 

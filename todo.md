@@ -15,7 +15,7 @@
   - [x] append
 
 - [ ] transform-table-data
-  - [ ] groupby
+  - [x] groupby
   - [ ] first-rows-as-headers
   - [ ] headers as first rows
   - [ ] transpose

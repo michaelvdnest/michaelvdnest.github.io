@@ -10,26 +10,16 @@ This is my collection of useful pandas recipes.
 
 ## Recipes by category
 
-* Column operations
-  * Remove Columns
-  * Remove Other Columns
+* Select Data
+  * [Choose Columns]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-columns/)
+  * [Choose Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-rows/)
+    * [Top and Bottom Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-rows/#top-and-bottom-rows)
+    * [Range of Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-rows/#range-of-rows)
+    * [Filter Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-rows/#filter-rows)
+    * [Duplicates]({{ site.url }}{{ site.baseurl }}/pandas-notes/choose-rows/#duplicates)
+  * [Missing Data]({{ site.url }}{{ site.baseurl }}/pandas-notes/missing-data/)
 
-* Rows
-  * Top Rows
-  * Bottom Rows
-  * Range of Rows
-  * Keep Duplicates
-  * Keeps Errors
-
-  * Remove Top Rows
-  * Remove Bottom Rows
-  * Remove Range of Rows
-  * Remove Alternate Rows
-  * Remove Duplicates
-  * Remove Blank Rows
-  * Remove Errors
-
-* Sort
+* [Sorting]({{ site.url }}{{ site.baseurl }}/pandas-notes/sorting/)
 
 * Transform
     * Split Column
@@ -40,7 +30,7 @@ This is my collection of useful pandas recipes.
       * By Uppercase to Lowercase
       * By Digit to Non-Digit
       * By Non-Digit to Digit
-    * Group By
+    * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
     * Data Type
     * Use First Rows as Headers
     * Use Headers as First Rows
@@ -52,7 +42,7 @@ This is my collection of useful pandas recipes.
 
 * Transform
   * Table
-    * Group By
+    * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
     * Use First Rows as Headers
     * Use Headers as First Rows
     * Transpose
