@@ -1,3 +1,6 @@
+# Jupyter csv test files
+*_test_file.csv
+
 # Ruby Gem
 *.gem
 .bundle
