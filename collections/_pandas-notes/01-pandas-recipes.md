@@ -31,7 +31,7 @@ This is my collection of useful pandas recipes.
       * By Digit to Non-Digit
       * By Non-Digit to Digit
     * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
-    * Data Type
+    * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
     * Use First Rows as Headers
     * Use Headers as First Rows
     * Replace Values
