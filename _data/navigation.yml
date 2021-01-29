@@ -44,7 +44,7 @@ pandas-notes:
         url: /pandas-notes/sorting/
   - title: Combining Data
     children:
-      - title: Concantenation
+      - title: Concatenation
         url: /pandas-notes/concat/
       - title: Merge
         url: /pandas-notes/merge/
@@ -58,7 +58,8 @@ pandas-notes:
         url: /pandas-notes/groupby/
       - title: Data Types
         url: /pandas-notes/datatypes/
-
+      - title: Headers
+        url: /pandas-notes/headers/
 
 # home sidebar
 home:
