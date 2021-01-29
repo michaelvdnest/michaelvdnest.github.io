@@ -2,6 +2,9 @@
 
 url: http://localhost:4001
 
+author:
+  avatar: "/assets/images/bio-photo.jpg"
+
 analytics:
   provider: false
 
