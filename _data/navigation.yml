@@ -60,6 +60,8 @@ pandas-notes:
         url: /pandas-notes/datatypes/
       - title: Headers
         url: /pandas-notes/headers/
+      - title: Reverse Rows
+        url: /pandas-notes/reverse/
 
 # home sidebar
 home:
