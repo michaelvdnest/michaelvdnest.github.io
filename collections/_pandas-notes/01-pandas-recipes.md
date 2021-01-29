@@ -32,19 +32,17 @@ This is my collection of useful pandas recipes.
       * By Non-Digit to Digit
     * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
     * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
-    * Use First Rows as Headers
-    * Use Headers as First Rows
+    * [Headers]({{ site.url }}{{ site.baseurl }}/pandas-notes/headers/)
     * Replace Values
 
 * Combine
-  * Merge
-  * Append
+  * [Merge]({{ site.url }}{{ site.baseurl }}/pandas-notes/merge/)
+  * [Concat]({{ site.url }}{{ site.baseurl }}/pandas-notes/concat/)
 
 * Transform
   * Table
     * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
-    * Use First Rows as Headers
-    * Use Headers as First Rows
+    * [Headers]({{ site.url }}{{ site.baseurl }}/pandas-notes/headers/)
     * Transpose
     * Reverse Rows
   * Any Columns
