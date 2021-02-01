@@ -46,7 +46,7 @@ This is my collection of useful pandas recipes.
     * Transpose
     * [Reverse Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/reverse/)
   * Any Columns
-    * Data Type
+    * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
     * [Rename]({{ site.url }}{{ site.baseurl }}/pandas-notes/rename/)
     * Replace Values
     * Replace Errors
