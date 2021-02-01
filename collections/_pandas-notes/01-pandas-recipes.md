@@ -43,7 +43,7 @@ This is my collection of useful pandas recipes.
   * Table
     * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
     * [Headers]({{ site.url }}{{ site.baseurl }}/pandas-notes/headers/)
-    * Transpose
+    * [Transpose]({{ site.url }}{{ site.baseurl }}/pandas-notes/transpose/)
     * [Reverse Rows]({{ site.url }}{{ site.baseurl }}/pandas-notes/reverse/)
   * Any Columns
     * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
