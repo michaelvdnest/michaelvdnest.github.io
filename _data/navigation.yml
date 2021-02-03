@@ -64,6 +64,10 @@ pandas-notes:
         url: /pandas-notes/reverse/
       - title: Transpose
         url: /pandas-notes/transpose/
+      - title: Rename
+        url: /pandas-notes/rename/
+      - title: Replace
+        url: /pandas-notes/replace/
 
 # home sidebar
 home:

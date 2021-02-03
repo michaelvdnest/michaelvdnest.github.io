@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>datatypes-readdata</title>
+<title>rename-rename</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13084,7 +13084,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dft</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span>
 </pre></div>
 
     </div>
@@ -13120,65 +13120,29 @@ div#notebook {
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>str1</th>
-      <th>str2</th>
-      <th>str3</th>
-      <th>float64</th>
-      <th>int64</th>
-      <th>float32</th>
-      <th>int8</th>
-      <th>bool</th>
-      <th>date1</th>
-      <th>date2</th>
-      <th>date3</th>
-      <th>delta</th>
+      <th>a</th>
+      <th>b</th>
+      <th>c</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.673861</td>
-      <td>1</td>
-      <td>0.891567</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-01</td>
-      <td>2011-06-24</td>
-      <td>0 days</td>
+      <td>4.0</td>
+      <td>7</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.790584</td>
-      <td>1</td>
-      <td>0.846940</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-02</td>
-      <td>2011-06-24</td>
-      <td>1 days</td>
+      <td>5.0</td>
+      <td>8</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.479642</td>
-      <td>1</td>
-      <td>0.223100</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-03</td>
-      <td>2011-06-24</td>
-      <td>2 days</td>
+      <td>NaN</td>
+      <td>9</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
@@ -13191,14 +13155,22 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Change names of specific columns.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">dft</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">&#39;datatypes_test_file.csv&#39;</span><span class="p">,</span><span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">dfc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datatypes_test_file.csv&#39;</span><span class="p">)</span>
-<span class="n">dfc</span><span class="o">.</span><span class="n">dtypes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="s2">&quot;B&quot;</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="s2">&quot;B&quot;</span><span class="p">},</span> <span class="n">axis</span><span class="o">=</span><span class="s2">&quot;columns&quot;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">({</span><span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="s2">&quot;B&quot;</span><span class="p">},</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13215,21 +13187,52 @@ div#notebook {
 
 
 
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<div class="output_text output_subarea output_execute_result">
-<pre>str1        object
-str2        object
-str3        object
-float64    float64
-int64        int64
-float32    float64
-int8         int64
-bool          bool
-date1       object
-date2       object
-date3       object
-delta       object
-dtype: object</pre>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>c</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>4.0</td>
+      <td>7</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>5.0</td>
+      <td>8</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>NaN</td>
+      <td>9</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 </div>
 
 </div>
@@ -13241,7 +13244,7 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>pandas provides various ways to specify column data types.</p>
+<p>Change columns names using a function.</p>
 
 </div>
 </div>
@@ -13251,31 +13254,9 @@ dtype: object</pre>
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Indicate the data types for columns</span>
-<span class="n">dft</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;datatypes_test_file.csv&#39;</span><span class="p">,</span>
-    <span class="n">dtype</span><span class="o">=</span><span class="p">{</span>
-        <span class="s2">&quot;str2&quot;</span><span class="p">:</span> <span class="s2">&quot;string&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;str3&quot;</span><span class="p">:</span> <span class="s2">&quot;category&quot;</span><span class="p">,</span>
-        <span class="s2">&quot;float32&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">,</span>
-        <span class="s2">&quot;bool&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">bool</span>
-    <span class="p">},</span> 
-    <span class="n">parse_dates</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;date1&#39;</span><span class="p">,</span> <span class="s1">&#39;date2&#39;</span><span class="p">],</span>
-    <span class="n">converters</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;delta&#39;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_timedelta</span><span class="p">})</span>
-
-<span class="c1"># Explicitly convert dtype.</span>
-<span class="n">dft</span><span class="p">[</span><span class="s1">&#39;str2&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s1">&#39;string&#39;</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span> 
-
-<span class="c1"># Set invalid to nan and smallest dtype.</span>
-<span class="n">dft</span><span class="p">[</span><span class="s1">&#39;int8&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">dft</span><span class="p">[</span><span class="s1">&#39;int8&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s2">&quot;coerce&quot;</span><span class="p">,</span>
-                            <span class="n">downcast</span><span class="o">=</span><span class="s2">&quot;integer&quot;</span><span class="p">)</span> 
-
-<span class="c1"># Might be faster if date format is not standard.</span>
-<span class="n">dft</span><span class="p">[</span><span class="s1">&#39;date3&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">dft</span><span class="p">[</span><span class="s1">&#39;date3&#39;</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">&#39;</span><span class="p">)</span> 
-
-<span class="c1"># Explicit conversion of the column. Might be faster than using a converter.</span>
-<span class="n">dft</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_timedelta</span><span class="p">(</span><span class="n">dft</span><span class="p">[</span><span class="s1">&#39;delta&#39;</span><span class="p">])</span>
-
-<span class="n">dft</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">mapper</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;columns&#39;</span><span class="p">)</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">mapper</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13311,65 +13292,116 @@ dtype: object</pre>
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>str1</th>
-      <th>str2</th>
-      <th>str3</th>
-      <th>float64</th>
-      <th>int64</th>
-      <th>float32</th>
-      <th>int8</th>
-      <th>bool</th>
-      <th>date1</th>
-      <th>date2</th>
-      <th>date3</th>
-      <th>delta</th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>0</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.673861</td>
-      <td>1</td>
-      <td>0.891567</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-01</td>
-      <td>2011-06-24</td>
-      <td>0 days</td>
+      <td>4.0</td>
+      <td>7</td>
+      <td>10.0</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.790584</td>
-      <td>1</td>
-      <td>0.846940</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-02</td>
-      <td>2011-06-24</td>
-      <td>1 days</td>
+      <td>5.0</td>
+      <td>8</td>
+      <td>11.0</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>foo</td>
-      <td>bar</td>
-      <td>qux</td>
-      <td>0.479642</td>
-      <td>1</td>
-      <td>0.223100</td>
-      <td>1</td>
-      <td>False</td>
-      <td>2001-01-02</td>
-      <td>2015-01-03</td>
-      <td>2011-06-24</td>
-      <td>2 days</td>
+      <td>NaN</td>
+      <td>9</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Rename column and index labels.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;a&quot;</span><span class="p">:</span><span class="s2">&quot;A&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">:</span><span class="s2">&quot;B&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">:</span><span class="s2">&quot;C&quot;</span><span class="p">},</span> 
+          <span class="n">index</span><span class="o">=</span><span class="p">{</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">:</span><span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">:</span><span class="mi">30</span><span class="p">})</span>
+<span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="nb">str</span><span class="o">.</span><span class="n">upper</span><span class="p">,</span> 
+          <span class="n">index</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">*</span>  <span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>A</th>
+      <th>B</th>
+      <th>C</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10</th>
+      <td>4.0</td>
+      <td>7</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td>5.0</td>
+      <td>8</td>
+      <td>11.0</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td>NaN</td>
+      <td>9</td>
+      <td>NaN</td>
     </tr>
   </tbody>
 </table>
