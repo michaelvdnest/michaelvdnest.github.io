@@ -17,7 +17,7 @@ Use the `dtypes` attribute to display the data type of each column in a `DataFra
 <iframe src="/assets/notebooks/datatypes-info.html" frameBorder="0" width="100%" height="100%"
   scrolling="no" onload="resizeIframe(this)"></iframe>
 
-## Reading Data
+## Change Data Types
 
 When reading in data the default types of `object`, `float64` and `int64` are applied to columns. The
 column data types can be specified in various ways.
