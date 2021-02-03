@@ -33,7 +33,7 @@ This is my collection of useful pandas recipes.
     * [Group By]({{ site.url }}{{ site.baseurl }}/pandas-notes/groupby/)
     * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
     * [Headers]({{ site.url }}{{ site.baseurl }}/pandas-notes/headers/)
-    * Replace Values
+    * [Replace Values]({{ site.url }}{{ site.baseurl }}/pandas-notes/replace/)
 
 * Combine
   * [Merge]({{ site.url }}{{ site.baseurl }}/pandas-notes/merge/)
@@ -48,8 +48,9 @@ This is my collection of useful pandas recipes.
   * Any Columns
     * [Data Type]({{ site.url }}{{ site.baseurl }}/pandas-notes/datatypes/)
     * [Rename]({{ site.url }}{{ site.baseurl }}/pandas-notes/rename/)
-    * Replace Values
-    * Replace Errors
+    * [Replace Values]({{ site.url }}{{ site.baseurl }}/pandas-notes/replace/)
+    * [Replace Errors]({{ site.url }}{{ site.baseurl }}/pandas-notes/replace-missing/)
+
     * Fill Down
     * Fill Up
     * Pivot Column
