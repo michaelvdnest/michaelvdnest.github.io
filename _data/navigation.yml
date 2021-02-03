@@ -68,6 +68,8 @@ pandas-notes:
         url: /pandas-notes/rename/
       - title: Replace
         url: /pandas-notes/replace/
+      - title: Replace Missing
+        url: /pandas-notes/replace-missing/
 
 # home sidebar
 home:
