@@ -13089,16 +13089,15 @@ div#notebook {
         <span class="s2">&quot;str1&quot;</span><span class="p">:</span> <span class="s2">&quot;foo&quot;</span><span class="p">,</span>
         <span class="s2">&quot;str2&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;bar&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;string&quot;</span><span class="p">),</span>
         <span class="s2">&quot;str3&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="s2">&quot;qux&quot;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;category&quot;</span><span class="p">),</span>
-        <span class="s2">&quot;float64&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
+        <span class="s2">&quot;float64&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">64</span><span class="p">)</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">),</span>
         <span class="s2">&quot;int64&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
-        <span class="s2">&quot;float32&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">),</span>
+        <span class="s2">&quot;float32&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">RandomState</span><span class="p">(</span><span class="mi">32</span><span class="p">)</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="s2">&quot;float32&quot;</span><span class="p">),</span>
         <span class="s2">&quot;int8&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">]</span> <span class="o">*</span> <span class="mi">3</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="s2">&quot;int8&quot;</span><span class="p">),</span>
         <span class="s2">&quot;bool&quot;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
         <span class="s2">&quot;date1&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">Timestamp</span><span class="p">(</span><span class="s2">&quot;20010102&quot;</span><span class="p">),</span>
         <span class="s2">&quot;date2&quot;</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">date_range</span><span class="p">(</span><span class="s2">&quot;1/1/2015&quot;</span><span class="p">,</span> <span class="n">periods</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
         <span class="s2">&quot;date3&quot;</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">datetime64</span><span class="p">(</span><span class="s1">&#39;2011-06-24&#39;</span><span class="p">),</span>
         <span class="s2">&quot;delta&quot;</span><span class="p">:</span> <span class="p">[</span><span class="n">pd</span><span class="o">.</span><span class="n">Timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">)]</span>
-        
     <span class="p">}</span>
 <span class="p">)</span>
 <span class="n">dft</span>
@@ -13157,9 +13156,9 @@ div#notebook {
       <td>foo</td>
       <td>bar</td>
       <td>qux</td>
-      <td>0.077634</td>
+      <td>0.379099</td>
       <td>1</td>
-      <td>0.707446</td>
+      <td>0.858889</td>
       <td>1</td>
       <td>False</td>
       <td>2001-01-02</td>
@@ -13172,9 +13171,9 @@ div#notebook {
       <td>foo</td>
       <td>bar</td>
       <td>qux</td>
-      <td>0.244181</td>
+      <td>0.567098</td>
       <td>1</td>
-      <td>0.733971</td>
+      <td>0.372711</td>
       <td>1</td>
       <td>False</td>
       <td>2001-01-02</td>
@@ -13187,9 +13186,9 @@ div#notebook {
       <td>foo</td>
       <td>bar</td>
       <td>qux</td>
-      <td>0.550102</td>
+      <td>0.595593</td>
       <td>1</td>
-      <td>0.677183</td>
+      <td>0.555129</td>
       <td>1</td>
       <td>False</td>
       <td>2001-01-02</td>
@@ -13294,14 +13293,14 @@ dtype: object</pre>
 
 <div class="output_text output_subarea output_execute_result">
 <pre>datetime64[ns]     3
-int64              1
-float32            1
-int8               1
-timedelta64[ns]    1
-category           1
-string             1
 object             1
+category           1
+int64              1
+timedelta64[ns]    1
+int8               1
+float32            1
 float64            1
+string             1
 bool               1
 dtype: int64</pre>
 </div>
