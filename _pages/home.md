@@ -1,5 +1,5 @@
 ---
-layout: single
+layout: home
 permalink: /
 author_profile: true
 sidebar:
@@ -14,9 +14,8 @@ feature_row:
     btn_label: "Learn more"
 ---
 
-A more general tech blog covering topics of interest that catches my eye.
+A general tech blog covering topics of interest that catches my eye.
 
-## Featured Content
-
+### Featured Content1
 
 {% include feature_row %}
