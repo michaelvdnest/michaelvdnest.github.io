@@ -68,6 +68,14 @@ pandas-notes:
         url: /pandas-notes/rename/
       - title: Replace
         url: /pandas-notes/replace/
+      - title: Replace Missing
+        url: /pandas-notes/replace-missing/
+      - title: Melt (Unpivot)
+        url: /pandas-notes/reshape/#melt
+      - title: Pivot
+        url: /pandas-notes/reshape/#pivot
+      - title: Tidy Data
+        url: /pandas-notes/tidy-data/
 
 # home sidebar
 home:

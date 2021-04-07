@@ -14,24 +14,25 @@
   - [x] merge
   - [x] append
 
-- [ ] transform-table-data
+- [x] transform-table-data
   - [x] groupby
-  - [ ] first-rows-as-headers
-  - [ ] headers as first rows
-  - [ ] transpose
-  - [ ] reverse rows
+  - [x] first-rows-as-headers
+  - [x] headers as first rows
+  - [x] transpose
+  - [x] reverse rows
 
 - [ ] transform-table-data
-  - [ ] data type
-  - [ ] rename
-  - [ ] replace-values
-    where
-  - [ ] replace-errors
-  - [ ] fill down
-  - [ ] fill up
-  - [ ] pivot column
-  - [ ] unpivot column
-  - [ ] move
+  - [x] data type
+  - [x] rename
+  - [x] replace-values
+  - [x] replace-na
+  - [x] fill down
+  - [x] fill up
+  - [x] pivot column
+  - [x] unpivot column
+  - [ ] stack
+  - [ ] unstack
+  - [x] move
 
 - text column
   - [] split
@@ -47,6 +48,7 @@
   - [ ] duplicate
   - [ ] text column
 
+- [ ] add links to csv files used in jupyters
 
 ## Collection for post formatting
 

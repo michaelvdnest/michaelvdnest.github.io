@@ -56,8 +56,8 @@ This is my collection of useful pandas recipes.
 
     * Fill Down
     * Fill Up
-    * Pivot Column
-    * Unpivot Column
+    * [Unpivot Column (Melt)]({{ site.url }}{{ site.baseurl }}/pandas-notes/reshape/#melt)
+    * [Pivot Column]({{ site.url }}{{ site.baseurl }}/pandas-notes/reshape/#pivot)
     * Move
   * Text Column
     * Split Column
