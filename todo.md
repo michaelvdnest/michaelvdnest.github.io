@@ -26,11 +26,13 @@
   - [x] rename
   - [x] replace-values
   - [x] replace-na
-  - [ ] fill down
-  - [ ] fill up
-  - [ ] pivot column
-  - [ ] unpivot column
-  - [ ] move
+  - [x] fill down
+  - [x] fill up
+  - [x] pivot column
+  - [x] unpivot column
+  - [ ] stack
+  - [ ] unstack
+  - [x] move
 
 - text column
   - [] split

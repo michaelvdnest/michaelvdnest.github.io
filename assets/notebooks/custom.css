@@ -16,20 +16,23 @@ div#notebook {
 }
 
 /* HIDE input[xxx]: TEXT AND REMOVE THE PADDING ON THE LEFT */
-/*
 div.input_prompt {
+  display: none;
+}
+div.output_prompt {
   display: none;
 }
 .prompt {
   min-width: 0ex;
   padding: 0ex;
 }
-*/
 /* OR LESSEN PADDING ON THE LEFT */
+/*
 .prompt {
   min-width: 10ex;
   padding: 1ex;
 }
+*/
 
 /* REDUCE BODY PADDING */
 body {
