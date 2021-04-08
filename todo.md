@@ -8,7 +8,7 @@
 
 - [x] pandas-sort
 
-- [ ] combine
+- [x] combine
   - [x] concat
   - [x] join
   - [x] merge
