@@ -34,11 +34,11 @@
   - [ ] unstack
   - [x] move
 
-- text column
-  - [] split
-  - [] format
-  - [] merge
-  - [] extract
+- [ ] text column
+  - [ ] split
+  - [ ] format
+  - [ ] merge
+  - [ ] extract
 
 - [ ] add column
   - [ ] custom column
