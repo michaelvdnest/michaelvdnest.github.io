@@ -18,18 +18,22 @@ The first line creates a folder ~/.dotfiles which is a Git bare repository that 
 {% highlight bash %}
 cd ~
 git init --bare .dotfiles
-
 {% endhighlight %}
 
 Then we create an alias config which we will use instead of the regular git when we want to interact with our configuration repository.
 We set a flag - local to the repository - to hide files we are not explicitly tracking yet. This is so that when you type config status and other commands later, files you are not interested in tracking will not show up as untracked.
 
+{% highlight bash %}
 alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
 config config status.showUntrackedFiles no
+{% endhighlight %}
 
 add the alias definition by hand to your .bashrc
 
+{% highlight bash %}
 echo "alias config='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+{% endhighlight %}
+
 
 any file within the home folder can be versioned with normal commands like:
 After you've executed the setup any file within the $HOME folder can be versioned with normal commands, replacing git with your newly created config alias, like:
@@ -54,10 +58,12 @@ any file within the home folder can be versioned with normal commands like:
 you can replicate your home directory on a new machine using the following command
 For posterity, note that this will fail if your home directory isn't empty. To get around that, clone the repo's working directory into a temporary directory first and then delete that directory,
 
+{% highlight bash %}
     git clone --separate-git-dir=$HOME/.myconf /path/to/repo $HOME/myconf-tmp
     cp ~/myconf-tmp/.gitmodules ~  # If you use Git submodules
     rm -r ~/myconf-tmp/
     alias config='/usr/bin/git --git-dir=$HOME/.myconf/ --work-tree=$HOME'
+{% endhighlight %}
 
 
 https://askubuntu.com/questions/1316229/is-it-bad-practice-to-git-init-in-the-home-directory-to-keep-track-of-dot-files
