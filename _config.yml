@@ -277,6 +277,9 @@ collections:
   pandas-notes:
     output: true
     permalink: /:collection/:path/
+  post-samples:
+    output: true
+    permalink: /:collection/:path/
 #  recipes:
 #    output: true
 #    permalink: /:collection/:path/
@@ -313,6 +316,18 @@ defaults:
       comments: false
       sidebar:
         nav: "pandas-notes"
+  # _post-samples
+  - scope:
+      path: "_post-samples"
+      type: post-samples
+    values:
+      layout: single
+      read_time: false
+      author_profile: false
+      share: false
+      comments: false
+      sidebar:
+        nav: "post-samples"
   # _recipes
   - scope:
       path: ""

@@ -77,6 +77,14 @@ pandas-notes:
       - title: Tidy Data
         url: /pandas-notes/tidy-data/
 
+# post samples links
+post-samples:
+  - title: Samples
+    url: /post-samples/samples/
+    children:
+      - title: "Text Formatting"
+        url: /post-samples/text-formatting/
+
 # home sidebar
 home:
   - title: "Collections"
@@ -84,3 +92,5 @@ home:
     children:
     - title: Pandas Recipes
       url: /pandas-notes/useful-recipes/
+    - title: Post Samples
+      url: /post-samples/samples/
