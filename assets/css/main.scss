@@ -1,4 +1,7 @@
-// Only the main Sass file needs front matter (the dashes are enough)
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
 
 @charset "utf-8";
 
@@ -30,7 +33,12 @@ $type-size-6 : 0.6875em; // ~11px
 $type-size-7 : 0.625em;  // ~10px
 $type-size-8 : 0.625em;  // ~10px
 
-$border-color: mix(#fff, #7a8288, 75%);
+$right-sidebar-width: 250px;
+
+$x-large: 1360px;
+$max-width: $x-large;
+
+$border-color : mix(#fff, #7a8288, 75%);
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
