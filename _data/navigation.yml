@@ -80,11 +80,16 @@ useful-pandas-recipes:
 sample-posts:
   - title: Sample Posts
     url: /sample-posts/
+  - title: Markup 
     children:
       - title: "Basic Formatting"
         url: /sample-posts/basic-formatting/
       - title: "Advanced Formatting"
         url: /sample-posts/advanced-formatting/
+  - title: Posts 
+    children:
+      - title: "Image Alignment"
+        url: /sample-posts/image-alignment/
 
 # home sidebar
 home:
