@@ -1,6 +1,6 @@
 ---
 title:  "Advanced Formatting"
-permalink: /post-samples/advanced-formatting/
+permalink: /sample-posts/advanced-formatting/
 excerpt: "Advanced text formatting."
 last_modified_at: 2021-10-17 10:26:02
 tags: [documentation,sample]

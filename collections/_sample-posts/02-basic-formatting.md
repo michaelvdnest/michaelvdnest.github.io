@@ -1,6 +1,6 @@
 ---
 title:  "Basic Formatting"
-permalink: /post-samples/basic-formatting/
+permalink: /sample-posts/basic-formatting/
 excerpt: "Basic text formatting."
 last_modified_at: 2021-10-17 10:28:13
 tags: [documentation,sample]

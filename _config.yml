@@ -277,7 +277,7 @@ collections:
   useful-pandas-recipes:
     output: true
     permalink: /:collection/:path/
-  post-samples:
+  sample-posts:
     output: true
     permalink: /:collection/:path/
 #  recipes:
@@ -316,10 +316,10 @@ defaults:
       comments: false
       sidebar:
         nav: "useful-pandas-recipes"
-  # _post-samples
+  # _sample-posts
   - scope:
-      path: "_post-samples"
-      type: post-samples
+      path: "_sample-posts"
+      type: sample-posts
     values:
       layout: single
       read_time: false
@@ -327,7 +327,7 @@ defaults:
       share: false
       comments: false
       sidebar:
-        nav: "post-samples"
+        nav: "sample-posts"
   # _recipes
   - scope:
       path: ""

@@ -13,8 +13,8 @@ main:
     url: /tag-archive/
 #  - title: "Pages"
 #    url: /page-archive/
-#  - title: "Collections"
-#    url: /collection-archive/
+  - title: "Collections"
+    url: /collection-archive/
 #  - title: "External Link"
 #    url: https://google.com
   - title: "Sitemap"
@@ -77,14 +77,14 @@ useful-pandas-recipes:
         url: /useful-pandas-recipes/tidy-data/
 
 # post samples links
-post-samples:
-  - title: Post Samples
-    url: /post-samples/
+sample-posts:
+  - title: Sample Posts
+    url: /sample-posts/
     children:
       - title: "Basic Formatting"
-        url: /post-samples/basic-formatting/
+        url: /sample-posts/basic-formatting/
       - title: "Advanced Formatting"
-        url: /post-samples/advanced-formatting/
+        url: /sample-posts/advanced-formatting/
 
 # home sidebar
 home:
@@ -93,5 +93,5 @@ home:
     children:
     - title: Pandas Recipes
       url: /useful-pandas-recipes/
-    - title: Post Samples
-      url: /post-samples/
+    - title: Sample Posts
+      url: /sample-posts/
