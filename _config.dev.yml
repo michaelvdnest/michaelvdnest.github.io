@@ -3,7 +3,7 @@
 url: http://localhost:4001
 
 author:
-  avatar: "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/avatar-icon.png"
 
 analytics:
   provider: false
