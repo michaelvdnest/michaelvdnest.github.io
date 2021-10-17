@@ -3,7 +3,7 @@ title:  "Basic Formatting"
 permalink: /sample-posts/basic-formatting/
 excerpt: "Basic text formatting."
 last_modified_at: 2021-10-17 10:28:13
-tags: [documentation,sample]
+tags: [markup,documentation,sample]
 toc: true
 toc_sticky: true
 categories:
@@ -150,6 +150,21 @@ Numbered lists are made by using numbers instead of bullet points.
 1. First list item
    - First nested list item
      - Second nested list item
+
+### Task lists
+
+To create a task list, preface list items with a space character followed by
+`[ ]`. To mark a task as complete, use `[x]`.
+
+```markdown
+- [x] Completed task
+- [ ] Todo task
+- [ ] (Optional) another task
+```
+
+- [x] Completed task
+- [ ] Todo task
+- [ ] (Optional) another task
 
 ## Tables
 
