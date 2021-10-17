@@ -1,6 +1,6 @@
 ---
-title:  "Post samples"
-permalink: /post-samples/samples/
+title:  "Post Samples"
+permalink: /post-samples/
 excerpt: "Collection of post samples."
 last_modified_at: 2021-10-15 21:19:00
 toc: false

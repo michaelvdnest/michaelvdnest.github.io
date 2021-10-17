@@ -1,6 +1,6 @@
 ---
 title: "Transpose"
-permalink: /pandas-notes/transpose/
+permalink: /useful-pandas-recipes/transpose/
 excerpt: "Transpose a DataFrame"
 last_modified_at: 2021-01-30
 toc: true_false

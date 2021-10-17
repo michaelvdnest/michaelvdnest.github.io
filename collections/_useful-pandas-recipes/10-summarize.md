@@ -1,6 +1,6 @@
 ---
 title: "Summarize"
-permalink: /pandas-notes/summarize/
+permalink: /useful-pandas-recipes/summarize/
 excerpt: "Summarize data in a dataset"
 last_modified_at: 2021-01-25
 toc: true

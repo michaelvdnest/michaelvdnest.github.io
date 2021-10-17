@@ -1,6 +1,6 @@
 ---
 title: "Tidy Data"
-permalink: /pandas-notes/tidy-data/
+permalink: /useful-pandas-recipes/tidy-data/
 excerpt: "Tidy Data"
 last_modified_at: 2021-02-09
 toc: true

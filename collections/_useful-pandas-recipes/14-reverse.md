@@ -1,6 +1,6 @@
 ---
 title: "Reverse Rows"
-permalink: /pandas-notes/reverse/
+permalink: /useful-pandas-recipes/reverse/
 excerpt: "Reverse the rows in a dataset."
 last_modified_at: 2021-01-29
 toc: true

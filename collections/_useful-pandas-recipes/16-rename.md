@@ -1,6 +1,6 @@
 ---
 title: "Rename"
-permalink: /pandas-notes/rename/
+permalink: /useful-pandas-recipes/rename/
 excerpt: "Rename column names."
 last_modified_at: 2021-02-01
 toc: true

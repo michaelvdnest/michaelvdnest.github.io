@@ -1,6 +1,6 @@
 ---
 title: "Missing Data"
-permalink: /pandas-notes/missing-data/
+permalink: /useful-pandas-recipes/missing-data/
 excerpt: "Dealing with missing data"
 last_modified_at: 2021-01-19
 toc: false

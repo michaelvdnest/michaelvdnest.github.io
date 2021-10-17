@@ -1,6 +1,6 @@
 ---
 title: "Replace"
-permalink: /pandas-notes/replace/
+permalink: /useful-pandas-recipes/replace/
 excerpt: "Replace values in a dataset"
 last_modified_at: 2021-02-01
 toc: true

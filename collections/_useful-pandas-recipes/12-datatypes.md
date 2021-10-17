@@ -1,6 +1,6 @@
 ---
 title: "Data Types"
-permalink: /pandas-notes/datatypes/
+permalink: /useful-pandas-recipes/datatypes/
 excerpt: "Specifying column data types."
 last_modified_at: 2021-01-27
 toc: true
@@ -62,7 +62,7 @@ Compare different ways of converting to timestamps.
 The following table contains some of the pandas data types with some notes on each type.
 
 | String Alias    | Note                                                                              | Size | Alias  | Types                                                |
-|:----------------|:----------------------------------------------------------------------------------|:-----|:-------|:-----------------------------------------------------|
+| :-------------- | :-------------------------------------------------------------------------------- | :--- | :----- | :--------------------------------------------------- |
 | bool            | True or False                                                                     | 8    |        | bool, np.bool                                        |
 | int64           | [-9,223,372,036,854,775,808, 9,223,372,036,854,775,807). Default for integers.    | 64   | long   | int, np.int64                                        |
 | float64         | Double precision float: sign bit, 11 bits exponent, 52 bits mantissa. Default for | 64   | double | float, np.float64                                    |

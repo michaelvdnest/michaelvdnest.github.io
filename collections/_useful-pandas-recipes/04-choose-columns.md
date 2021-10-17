@@ -1,6 +1,6 @@
 ---
 title: "Choose Columns"
-permalink: /pandas-notes/choose-columns/
+permalink: /useful-pandas-recipes/choose-columns/
 excerpt: "Select a subset of the dataset."
 last_modified_at: 2021-01-18
 toc: true

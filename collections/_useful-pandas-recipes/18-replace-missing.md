@@ -1,6 +1,6 @@
 ---
 title: "Replace Missing Values"
-permalink: /pandas-notes/replace-missing/
+permalink: /useful-pandas-recipes/replace-missing/
 excerpt: "Replace Missing Values"
 last_modified_at: 2021-02-02
 toc: true

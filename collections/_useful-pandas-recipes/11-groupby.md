@@ -1,6 +1,6 @@
 ---
 title: "Group Data"
-permalink: /pandas-notes/groupby/
+permalink: /useful-pandas-recipes/groupby/
 excerpt: "Groups rows that have the same values into summary rows."
 last_modified_at: 2021-01-25
 toc: true

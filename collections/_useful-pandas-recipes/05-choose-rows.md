@@ -1,6 +1,6 @@
 ---
 title: "Choose Rows"
-permalink: /pandas-notes/choose-rows/
+permalink: /useful-pandas-recipes/choose-rows/
 excerpt: "Select rows in the dataset."
 last_modified_at: 2021-01-19
 toc: true

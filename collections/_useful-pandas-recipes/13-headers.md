@@ -1,6 +1,6 @@
 ---
 title: "Headers"
-permalink: /pandas-notes/headers/
+permalink: /useful-pandas-recipes/headers/
 excerpt: "Working with column headers."
 last_modified_at: 2021-01-29
 toc: true_false

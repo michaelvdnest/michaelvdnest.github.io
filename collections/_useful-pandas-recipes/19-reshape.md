@@ -1,6 +1,6 @@
 ---
 title: "Reshape Data"
-permalink: /pandas-notes/reshape/
+permalink: /useful-pandas-recipes/reshape/
 excerpt: "Change the structure of datasets"
 last_modified_at: 2021-02-16
 toc: true

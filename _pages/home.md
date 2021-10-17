@@ -9,7 +9,7 @@ feature_row:
     alt: "pandas"
     title: "pandas Recipes"
     excerpt: "A collection of useful pandas recipes."
-    url: "/pandas-notes/useful-recipes/"
+    url: "/useful-pandas-recipes/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---

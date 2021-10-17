@@ -21,66 +21,65 @@ main:
     url: /sitemap/
 
 # pandas notes links
-pandas-notes:
-  - title: Pandas Overview
+useful-pandas-recipes:
+  - title: "Useful pandas Recipes"
+    url: /useful-pandas-recipes/
     children:
-      - title: "Useful pandas Recipes"
-        url: /pandas-notes/useful-recipes/
       - title: "Creating DataFrames"
-        url: /pandas-notes/creating-dataframes/
+        url: /useful-pandas-recipes/creating-dataframes/
       - title: "DataFrame Components"
-        url: /pandas-notes/dataframe-components/
+        url: /useful-pandas-recipes/dataframe-components/
   - title: Select Data
     children:
       - title: "Choose Columns"
-        url: /pandas-notes/choose-columns/
+        url: /useful-pandas-recipes/choose-columns/
       - title: "Choose Rows"
-        url: /pandas-notes/choose-rows/
+        url: /useful-pandas-recipes/choose-rows/
       - title: "Missing Data"
-        url: /pandas-notes/missing-data/
+        url: /useful-pandas-recipes/missing-data/
   - title: Sorting
     children:
       - title: Sorting
-        url: /pandas-notes/sorting/
+        url: /useful-pandas-recipes/sorting/
   - title: Combining Data
     children:
       - title: Concatenation
-        url: /pandas-notes/concat/
+        url: /useful-pandas-recipes/concat/
       - title: Merge
-        url: /pandas-notes/merge/
+        url: /useful-pandas-recipes/merge/
   - title: Summarize Data
     children:
       - title: Summarize Data
-        url: /pandas-notes/summarize/
+        url: /useful-pandas-recipes/summarize/
   - title: Transform
     children:
       - title: Group By
-        url: /pandas-notes/groupby/
+        url: /useful-pandas-recipes/groupby/
       - title: Data Types
-        url: /pandas-notes/datatypes/
+        url: /useful-pandas-recipes/datatypes/
       - title: Headers
-        url: /pandas-notes/headers/
+        url: /useful-pandas-recipes/headers/
       - title: Reverse Rows
-        url: /pandas-notes/reverse/
+        url: /useful-pandas-recipes/reverse/
       - title: Transpose
-        url: /pandas-notes/transpose/
+        url: /useful-pandas-recipes/transpose/
       - title: Rename
-        url: /pandas-notes/rename/
+        url: /useful-pandas-recipes/rename/
       - title: Replace
-        url: /pandas-notes/replace/
+        url: /useful-pandas-recipes/replace/
       - title: Replace Missing
-        url: /pandas-notes/replace-missing/
+        url: /useful-pandas-recipes/replace-missing/
       - title: Melt (Unpivot)
-        url: /pandas-notes/reshape/#melt
+        url: /useful-pandas-recipes/reshape/#melt
       - title: Pivot
-        url: /pandas-notes/reshape/#pivot
+        url: /useful-pandas-recipes/reshape/#pivot
       - title: Tidy Data
-        url: /pandas-notes/tidy-data/
+        url: /useful-pandas-recipes/tidy-data/
 
 # post samples links
 post-samples:
-  - title: Samples
-    url: /post-samples/samples/
+  - title: Post Samples
+    url: /post-samples/
     children:
       - title: "Basic Formatting"
         url: /post-samples/basic-formatting/
@@ -93,6 +92,6 @@ home:
     url: /collection-archive/
     children:
     - title: Pandas Recipes
-      url: /pandas-notes/useful-recipes/
+      url: /useful-pandas-recipes/
     - title: Post Samples
-      url: /post-samples/samples/
+      url: /post-samples/

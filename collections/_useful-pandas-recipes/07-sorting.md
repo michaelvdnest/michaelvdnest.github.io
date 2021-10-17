@@ -1,6 +1,6 @@
 ---
 title: "Sorting"
-permalink: /pandas-notes/sorting/
+permalink: /useful-pandas-recipes/sorting/
 excerpt: "Sorting pandas DataFrames by value and index."
 last_modified_at: 2021-01-20
 toc: true

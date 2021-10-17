@@ -1,6 +1,6 @@
 ---
 title:  "Creating Dataframes"
-permalink: /pandas-notes/creating-dataframes/
+permalink: /useful-pandas-recipes/creating-dataframes/
 excerpt: "Create dataframes."
 last_modified_at: 2021-01-17 22:39:07
 toc: true

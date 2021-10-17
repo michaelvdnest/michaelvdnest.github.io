@@ -1,6 +1,6 @@
 ---
 title: "Concatenation"
-permalink: /pandas-notes/concat/
+permalink: /useful-pandas-recipes/concat/
 excerpt: "Append rows and columns of DataFrames."
 last_modified_at: 2021-01-21
 toc: true

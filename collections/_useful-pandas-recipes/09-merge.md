@@ -1,6 +1,6 @@
 ---
 title: "Merging"
-permalink: /pandas-notes/merge/
+permalink: /useful-pandas-recipes/merge/
 excerpt: "Merge datasets with a database-style join."
 last_modified_at: 2021-01-25
 toc: true

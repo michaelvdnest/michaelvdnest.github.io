@@ -1,6 +1,6 @@
 ---
 title: "Dataframe Components"
-permalink: /pandas-notes/dataframe-components/
+permalink: /useful-pandas-recipes/dataframe-components/
 excerpt: "summary"
 last_modified_at: 2021-01-18
 classes: wide
