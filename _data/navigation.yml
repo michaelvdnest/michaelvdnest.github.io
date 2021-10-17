@@ -82,8 +82,10 @@ post-samples:
   - title: Samples
     url: /post-samples/samples/
     children:
-      - title: "Text Formatting"
-        url: /post-samples/text-formatting/
+      - title: "Basic Formatting"
+        url: /post-samples/basic-formatting/
+      - title: "Advanced Formatting"
+        url: /post-samples/advanced-formatting/
 
 # home sidebar
 home:
