@@ -5,11 +5,18 @@ author_profile: true
 sidebar:
   nav: "home"
 feature_row:
-  - image_path: /assets/images/pandas-logo.png
+  - image_path: /assets/images/pandas-logo-square.png
     alt: "pandas"
     title: "pandas Recipes"
     excerpt: "A collection of useful pandas recipes."
     url: "/useful-pandas-recipes/"
+    btn_class: "btn--primary"
+    btn_label: "Learn more"
+  - image_path: /assets/images/sample-posts.png
+    alt: "samples"
+    title: "Sample Posts"
+    excerpt: "A collection of sample posts."
+    url: "/sample-posts/"
     btn_class: "btn--primary"
     btn_label: "Learn more"
 ---
