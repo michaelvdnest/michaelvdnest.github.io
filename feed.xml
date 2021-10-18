@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.0">Jekyll</generator><link href="https://michaelvdnest.github.io//feed.xml" rel="self" type="application/atom+xml" /><link href="https://michaelvdnest.github.io//" rel="alternate" type="text/html" /><updated>2021-10-18T08:06:42+00:00</updated><id>https://michaelvdnest.github.io//feed.xml</id><title type="html">Michael’s Blog</title><subtitle>Website for Michael van der Nest.</subtitle><author><name>Michael van der Nest</name><email>michaelvdnest@gmail.com</email></author><entry><title type="html">Python Virtual Environments</title><link href="https://michaelvdnest.github.io//python/python-virtualenv/" rel="alternate" type="text/html" title="Python Virtual Environments" /><published>2021-04-06T16:15:21+00:00</published><updated>2021-04-06T16:15:21+00:00</updated><id>https://michaelvdnest.github.io//python/python-virtualenv</id><content type="html" xml:base="https://michaelvdnest.github.io//python/python-virtualenv/">&lt;p&gt;I’m using virtualenvwrapper to help manage my virtual environments in python.&lt;/p&gt;
+
+&lt;p&gt;The main reasons I’m using virtualenvwrapper is because of the following features:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Organize all of your virtual environments in one place.&lt;/li&gt;
+  &lt;li&gt;Has wrappers for managing your virtual environments (create, delete, copy).&lt;/li&gt;
+  &lt;li&gt;Use a single command to switch between environments.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;installation&quot;&gt;Installation&lt;/h2&gt;
+
+&lt;p&gt;Run the following commands to install and initialize virtualenvwrapper.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;pip &lt;span class=&quot;nb&quot;&gt;install &lt;/span&gt;virtualenvwrapper
+&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;WORKON_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;~/.virtualenvs
+&lt;span class=&quot;nb&quot;&gt;mkdir&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$WORKON_HOME&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/local/bin/virtualenvwrapper.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Add the following to your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;.bashrc&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;export &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;WORKON_HOME&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$HOME&lt;/span&gt;/.virtualenvs
+&lt;span class=&quot;nb&quot;&gt;source&lt;/span&gt; /usr/local/bin/virtualenvwrapper.sh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;basic-commands&quot;&gt;Basic Commands&lt;/h2&gt;
+
+&lt;h3 id=&quot;virtualenvwrapper&quot;&gt;virtualenvwrapper&lt;/h3&gt;
+
+&lt;p&gt;Print a list of commands and their descriptions as basic help output.&lt;/p&gt;
+
+&lt;p&gt;Syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;virtualenvwrapper
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;mkvirtualenv&quot;&gt;mkvirtualenv&lt;/h3&gt;
+
+&lt;p&gt;Create a new environment, in the WORKON_HOME.&lt;/p&gt;
+
+&lt;p&gt;Syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mkvirtualenv &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-a&lt;/span&gt; project_path] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-i&lt;/span&gt; package] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;-r&lt;/span&gt; requirements_file] &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;virtualenv options] ENVNAME
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;workon&quot;&gt;workon&lt;/h3&gt;
+
+&lt;p&gt;List or change working virtual environments.&lt;/p&gt;
+
+&lt;p&gt;Syntax:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;workon &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt;environment_name]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;deactivate&quot;&gt;deactivate&lt;/h3&gt;
+
+&lt;p&gt;Switch from a virtual environment to the system-installed version of Python.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;deactivate
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;other-commands&quot;&gt;Other Commands&lt;/h2&gt;
+
+&lt;h3 id=&quot;create-requirementstxt&quot;&gt;Create requirements.txt&lt;/h3&gt;
+
+&lt;p&gt;Navigate to virtual directory and output installed packages in requirements format.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nb&quot;&gt;cd&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;$VIRTUAL_ENV&lt;/span&gt;
+pip freeze &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; requirements.txt
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;see-also&quot;&gt;See also&lt;/h2&gt;
+
+&lt;p&gt;https://virtualenvwrapper.readthedocs.io/en/latest/index.html&lt;/p&gt;</content><author><name>Michael van der Nest</name><email>michaelvdnest@gmail.com</email></author><category term="python" /><category term="python" /><summary type="html">I’m using virtualenvwrapper to help manage my virtual environments in python.</summary></entry><entry><title type="html">Embed Jupyter Notebooks in Jekyll</title><link href="https://michaelvdnest.github.io//jupyter/embed-notebooks/" rel="alternate" type="text/html" title="Embed Jupyter Notebooks in Jekyll" /><published>2021-01-16T15:18:45+00:00</published><updated>2021-01-16T15:18:45+00:00</updated><id>https://michaelvdnest.github.io//jupyter/embed-notebooks</id><content type="html" xml:base="https://michaelvdnest.github.io//jupyter/embed-notebooks/">&lt;p&gt;It is possible to embed Jupyter notebooks into a post.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 1:&lt;/strong&gt; Create a js script file in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;assets/js/&lt;/code&gt; containing the following 
+function.&lt;/p&gt;
+
+&lt;div class=&quot;language-js highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;resizeIframe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;style&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;height&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;obj&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;contentWindow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;document&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;documentElement&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;scrollHeight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;50&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;px&lt;/span&gt;&lt;span class=&quot;dl&quot;&gt;'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 2:&lt;/strong&gt; Add the script file to the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;head_scripts&lt;/code&gt; array in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_config.yml&lt;/code&gt;.&lt;/p&gt;
+
+&lt;div class=&quot;language-yaml highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;na&quot;&gt;head_scripts&lt;/span&gt;&lt;span class=&quot;pi&quot;&gt;:&lt;/span&gt;
+  &lt;span class=&quot;pi&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;/assets/js/notebook-script.js&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 3:&lt;/strong&gt; Place the jupyter notebooks (‘.ipynb’ files) into a notebooks 
+directory in your sites project directory.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;your-project
+└── _ipynb/
+    ├── sample-dataframe.ipynb
+    ├── sample-plot.ipynb
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 4:&lt;/strong&gt; Create a notebooks directory in the assets directory. The converted
+notebook html files are stored in this notebooks directory.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;your-project
+└── assets/
+    └── notebooks/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 5:&lt;/strong&gt; Execute and convert the jupyter notebook to html.&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;jupyter nbconvert sample-plot.ipynb &lt;span class=&quot;nt&quot;&gt;--execute&lt;/span&gt; &lt;span class=&quot;nt&quot;&gt;--to&lt;/span&gt; html &lt;span class=&quot;nt&quot;&gt;--output-dir&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;../assets/notebooks/
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Step 6:&lt;/strong&gt; Add the following line where you want to the embed the
+notebook.&lt;/p&gt;
+
+&lt;div class=&quot;language-html highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;iframe&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;src=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;/assets/notebooks/sample-dataframe.html&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;frameBorder=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;0&quot;&lt;/span&gt; 
+ &lt;span class=&quot;na&quot;&gt;width=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;height=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;100%&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;scrolling=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;no&quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;onload=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;resizeIframe(this)&quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&amp;lt;/iframe&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;examples&quot;&gt;Examples&lt;/h2&gt;
+
+&lt;p&gt;Below are some examples of embedded notebooks.&lt;/p&gt;
+
+&lt;h3 id=&quot;embedded-dataframe&quot;&gt;Embedded Dataframe&lt;/h3&gt;
+
+&lt;p&gt;An example of an embedded pandas dataframe.&lt;/p&gt;
+
+&lt;iframe src=&quot;/assets/notebooks/sample-dataframe.html&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot; scrolling=&quot;no&quot; onload=&quot;resizeIframe(this)&quot;&gt;&lt;/iframe&gt;
+
+&lt;h3 id=&quot;embedded-plot&quot;&gt;Embedded Plot&lt;/h3&gt;
+
+&lt;p&gt;An example of an embedded matplotlib plot.&lt;/p&gt;
+
+&lt;iframe src=&quot;/assets/notebooks/sample-plot.html&quot; frameborder=&quot;0&quot; width=&quot;100%&quot; height=&quot;100%&quot; scrolling=&quot;no&quot; onload=&quot;resizeIframe(this)&quot;&gt;&lt;/iframe&gt;
+
+&lt;h2 id=&quot;references&quot;&gt;References&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll&quot;&gt;https://cduvallet.github.io/posts/2018/03/ipython-notebooks-jekyll&lt;/a&gt;
+&lt;a href=&quot;https://gist.github.com/dkmehrmann/3fd9e8b89a6e442fdc8787a4c1dbf4f2/&quot;&gt;https://gist.github.com/dkmehrmann/3fd9e8b89a6e442fdc8787a4c1dbf4f2/&lt;/a&gt;
+&lt;a href=&quot;https://salihmarangoz.github.io/How-to-Embed-Jupyter-Notebooks-to-Jekyll/&quot;&gt;https://salihmarangoz.github.io/How-to-Embed-Jupyter-Notebooks-to-Jekyll/&lt;/a&gt;&lt;/p&gt;</content><author><name>Michael van der Nest</name><email>michaelvdnest@gmail.com</email></author><category term="jupyter" /><category term="post" /><category term="jupyter" /><summary type="html">It is possible to embed Jupyter notebooks into a post.</summary></entry><entry><title type="html">Minimal Mistakes Theme</title><link href="https://michaelvdnest.github.io//jekyll/theme/minimal-mistakes/" rel="alternate" type="text/html" title="Minimal Mistakes Theme" /><published>2021-01-16T13:50:45+00:00</published><updated>2021-01-16T13:50:45+00:00</updated><id>https://michaelvdnest.github.io//jekyll/theme/minimal-mistakes</id><content type="html" xml:base="https://michaelvdnest.github.io//jekyll/theme/minimal-mistakes/">&lt;p&gt;This site has been created using the Minimal Mistakes Jekyll theme.&lt;/p&gt;
+
+&lt;p&gt;Minimal Mistakes has been developed as a Gem-based theme for easier use, and 100% compatible with GitHub Pages when used as a remote theme.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/&quot;&gt;Minimal Mistakes Quick Start Guide&lt;/a&gt; for more info.&lt;/p&gt;</content><author><name>Michael van der Nest</name><email>michaelvdnest@gmail.com</email></author><category term="jekyll" /><category term="theme" /><category term="jekyll" /><category term="theme" /><category term="minimal-mistakes" /><summary type="html">This site has been created using the Minimal Mistakes Jekyll theme.</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="https://michaelvdnest.github.io//jekyll/update/welcome-to-jekyll/" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2021-01-15T20:20:45+00:00</published><updated>2021-01-15T20:20:45+00:00</updated><id>https://michaelvdnest.github.io//jekyll/update/welcome-to-jekyll</id><content type="html" xml:base="https://michaelvdnest.github.io//jekyll/update/welcome-to-jekyll/">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name>Michael van der Nest</name><email>michaelvdnest@gmail.com</email></author><category term="jekyll" /><category term="update" /><category term="jekyll" /><category term="post" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
